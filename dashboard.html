@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BFAR eFisheries Portal — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<style>
+  .deck { max-width: 480px; margin: 0 auto; text-align: center; }
+  .deck p.lead { color: var(--ink-soft); margin-bottom: 26px; font-size: 14px; line-height: 1.6; }
+  .deck .btn-primary { width: auto; padding: 0 22px; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<div class="flag-strip" aria-hidden="true"></div>
+
+<main class="wrap">
+  <div class="card">
+    <header class="agency-header">
+      <div class="emblem" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="21" stroke="#FCD116" stroke-width="1.5"/>
+          <path d="M9 25c5-9 12-13 19-11c3 1 5 3 7 5c-2 2-4 4-7 5c-7 2-14-2-19-11z" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M28 14l4-3M28 30l4 3" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="agency-text">
+        <p class="eyebrow">Republic of the Philippines &middot; Department of Agriculture</p>
+        <p class="agency-name">Bureau of Fisheries and Aquatic Resources</p>
+      </div>
+    </header>
+
+    <svg class="wave-divider" viewBox="0 0 400 16" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 8 Q 25 0, 50 8 T 100 8 T 150 8 T 200 8 T 250 8 T 300 8 T 350 8 T 400 8" fill="none" stroke="#0038A8" stroke-width="1.5"/>
+    </svg>
+
+    <section class="panel deck">
+      <p class="portal-eyebrow">BFAR eFisheries Portal</p>
+      <h1 id="greeting">Welcome</h1>
+      <p class="lead" id="lead">Checking your session…</p>
+      <button class="btn-primary" id="logout-btn">
+        <span>Log out</span>
+      </button>
+    </section>
+  </div>
+</main>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
